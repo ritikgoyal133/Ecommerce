@@ -1,13 +1,7 @@
 Rails.application.routes.draw do
   resources :orders
   resources :line_items
-  # resources :line_items do
-  #   member do
-  #     get :delete   
-  #     # only make for delete root all route are cover with subjects
-  #   end
-  # end
-  resources :carts
+  resources :carts 
   # get 'store/index'
   resources :products
   # devise_for :users, :sign_out_via => [ :post, :delete ]

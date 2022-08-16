@@ -11,9 +11,9 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                      <li><%= link_to 'Product', store_index_path %></li>
-                    <%# <li><a href="#about">Cart</a></li> %>
-                    <li><%= link_to 'Cart', line_items_path %></li>
+                    <li><%= link_to 'Product', store_index_path %></li>
+                    <%# <li><%= link_to 'Cart', line_items_path %>
+                    <li><%= link_to 'Cart', cart_path((Cart.ids).last)%></li>
                     <%# <li><a href="#services">Checkout</a></li> %>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard<b class="caret"></b></a>

@@ -74,4 +74,3 @@ class LineItemsController < ApplicationController
       params.require(:line_item).permit(:product_id)
     end
 end
-# <%= link_to "Destroy this line item",  line_items_path(@line_item_id), method: :delete %>
