@@ -1,0 +1,21 @@
+.item{
+    margin-top: 50px;
+    // border: 1px solid black;
+    width: 50px;
+
+    p{
+        font-size: 25px;
+    }
+}
+
+.item-row{
+    height: 60vh;
+    // border: 1px solid green;
+    align-items: center;
+}
+
+.col{
+    margin-top: 100px;
+    margin-left: 50px;
+    // border: 1px solid red;
+}

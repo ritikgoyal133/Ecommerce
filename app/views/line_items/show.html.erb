@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="container item">
+  <div class = "row item-row">
+    <div class ="col-md-5 col">
+      <%= render @line_item %>
+      <div>
+       <%= button_to "Destroy this line item", @line_item, method: :delete , class: "btn btn-success" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%# <%= link_to "Edit this line item",   edit_line_item_path(@line_item) , class: "btn btn-success btn-block"%> 
+         <%# <br>
+         <%= link_to "Back to line items", line_items_path, class: "btn btn-success btn-block" %> 
