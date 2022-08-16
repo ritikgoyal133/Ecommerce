@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @product %>
+
+<table class="table">
+<thead>
+  <td><%=button_to "Edit this product", edit_product_path(@product) %> </td>
+  <td><%= button_to "Back to products", products_path %></td>
+  <td><%= button_to "Destroy this product", @product, method: :delete %></td>
+  </thead>
+</table>

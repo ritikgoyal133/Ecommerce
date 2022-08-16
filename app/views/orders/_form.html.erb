@@ -1,0 +1,60 @@
+<%= javascript_include_tag "order", "data-turbolinks-track" => true  %>
+
+<div class="container">
+ <%= form_with(model: order) do |form| %>
+  <% if order.errors.any? %>
+    <div class="alert alert-info">
+      <h2><%= pluralize(order.errors.count, "error") %> prohibited this order from being saved:</h2>
+      <ul>
+        <% order.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+</div>
+
+<div class="container order_pop">
+  <div class="row">
+    <div class="col-md-offset-4 col-md-4 a">
+      <h1 class="heading">Please Enter Your Details</h1>
+      <div class="field form-group"> 
+        <%= form.label :name, style: "display: block" %>
+        <%= form.text_field :name, class: 'form-control' %>
+      </div>
+
+      <div class="field form-group">
+        <%= form.label :address, style: "display: block" %>
+        <%= form.text_area :address , class: 'form-control'%>
+      </div>
+
+      <div class="field form-group">
+        <%= form.label :email, style: "display: block" %>
+        <%= form.text_field :email , class: 'form-control'%>
+      </div>
+
+      <div class="field form-group">
+        <%= form.label :pay_type, style: "display: block" %>
+        <%= form.number_field :pay_type , prompt: 'Select a payment method' ,class: 'form-control'%>
+      </div>
+      <div>
+        <%# <%= form.submit "Checkout" ,:class => 'checkout', class: 'btn btn-block b'%>
+        <a href="javascript:void(0);" id="hello" class ="btn btn-block b">Checkout</a>
+        <% end%>
+      </div>
+      <br><br>
+    </div>
+  </div>
+</div>
+
+<div class="container order hidden">
+  <div class="row">
+    <div class="col-md-offset-4 col-md-4 a">
+      <div class="messagepop pop promp">
+      
+          <%= link_to image_tag("pic4.png", class: "img-responsive center-block imgs"), height: 100 %> 
+        <h1>Thank you for choosing our product</h1>
+      </div>
+  </div>
+</div>
+
