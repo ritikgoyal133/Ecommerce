@@ -56,10 +56,11 @@ class LineItemsController < ApplicationController
   def destroy
     @line_item = LineItem.find(params[:id])
     @line_item.destroy
-    respond_to do |format|
-      format.html { redirect_to line_items_url, notice: "Line item was successfully destroyed." }
-      format.json { head :no_content }
-    end
+    # respond_to do |format|
+    #   format.html { redirect_to line_items_url, notice: "Line item was successfully destroyed." }
+    #   format.json { head :no_content }
+    # end
+    redirect_to store_index_url
   end
 
   private

@@ -3,5 +3,4 @@
 //= link_tree ../../javascript .js
 //= link_tree ../../../vendor/javascript .js
 //= link sign_up.js
-//= link sign_in.js
 //= link order.js
