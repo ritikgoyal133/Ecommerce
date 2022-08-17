@@ -1,0 +1,121 @@
+@import "colors";
+$formBorder: 4px solid $primaryColor;
+$boxShadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+
+table td{
+    font-size: 20px;
+    align-items: center;
+}
+
+table th{
+    font-size: 20px;
+    align-items: center;
+
+}
+.action{
+    display: block;
+}
+
+.action button{
+    // width: 100%;
+}
+
+.error{
+    color: red;
+  }
+
+.c{
+   padding-top: 40px !important;
+}
+
+.hidden{
+    display: none;
+}
+
+#hello{
+    // border-radius: 0;
+    box-shadow: none;
+    font-size: 24px; 
+}
+
+.promp{
+    height: 40vh;
+    padding-top: 50px;
+    .imgs{
+        height: 60px;
+    }
+    h1{
+     font-size: 25px;
+     text-align: center;
+     color: $primaryColor;
+     font-family: inherit;
+    }
+
+}
+
+.a{
+    // border: 1px solid green;
+    border-top: $formBorder;
+    border-bottom: $formBorder;
+    background: $baseColor;
+    box-shadow: $boxShadow;
+}
+.hello{
+    font-size: 25px;
+    color: $primaryColor;
+    padding: 30px;
+    padding-top: 15px !important;
+}
+
+.sign-container{
+    padding-top: 50px;
+    // border: 1px solid red;
+}
+
+input{
+    width: -webkit-fill-available;
+}
+
+.contact-form {
+    width: 100%;
+    border-top: $formBorder;
+    border-bottom: $formBorder;
+    padding: 30px;
+    padding-top: 15px !important;
+    background: $baseColor;
+    box-shadow: $boxShadow;
+}
+
+.form-group {
+    padding-bottom: 8px;
+}
+
+.contact-form input {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+// .contact-form button[type="submit"] {
+.b{
+    background-color: $primaryColor;
+    border: 0;
+    padding: 10px 24px;
+    color: $baseColor;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+.b:hover {
+    background: $primaryLightColor;
+}
+
+.heading{
+    padding-bottom: 20px;
+    font-weight: 700;
+    color: $primaryLightColor;
+}
+
+.c{
+    display: inline-block !important;
+}

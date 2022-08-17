@@ -1,0 +1,12 @@
+<%= javascript_include_tag "order", "data-turbolinks-track" => true  %>
+<div class = "container">
+<%# <h1>Please Enter Your Details</h1> %>
+ <section class="depot_form">
+<%= render 'form', order: @order %>
+</section>
+
+<div>
+  <%# <%= link_to "Back to orders", line_items_path %> 
+</div>
+
+</div>

@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+<h1 class="hp">Products(<%= link_to "New product", new_product_path %>)</h1>
+<div class="container">
+  <h1 class="text-center">Happy Shopping!</h1>
+  <div class="row">
+    <% @products.each do |product| %>
+      <%= render product %>
+    <% end %>
+  </div>
+</div>
+
